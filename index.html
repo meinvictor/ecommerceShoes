@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/index.js"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <div id="sidebar" class="animate__animated animate__zoomInLeft">
+      <ul>
+        <a href="#home"><li class="sidebarHome"></li></a>
+        <a href="#trending"><li class="sidebarTrending"></li></a>
+        <a href="#featured"><li class="sidebarFeautured"></li></a>
+        <a href="#comments"><li class="sidebarComments"></li></a>
+      </ul>
+    </div>
+
+    <div class="backgroundRed">
+      <div class="sneackerImg">
+        <img src="img/sneacker.png" alt="sneackerImg" class="animate__animated animate__bounceInRight">
+      </div>
+    </div>
+    <nav id="home" class="animate__animated animate__slideInDown">
+      <div class="navigation">
+        <a href="#trending"><li>Instagram</li></a>
+        <a href="#featured"><li>Telegram</li></a>
+        <a href="#comments"><li>What's up</li></a>
+      </div>
+      <div class="auth">
+        <a href="/login.html"><button class="login">Login</button></a>
+        <a href="/registration.html"><button class="signup">Sign Up</button></a>
+      </div>
+    </nav>
+
+    <div id="headerContent" class="animate__animated animate__zoomIn">
+      <div class="h1">
+        <h1>THE ULTIMATE QUICK <span>FIX.</span></h1>
+      </div>
+      <div class="h2">
+        <h2>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+          mollitia officiis possimus minus voluptas harum libero tempore sint,
+          recusandae placeat.
+        </h2>
+      </div>
+      <div class="findOutBtn">
+        <button>Find Out More</button>
+        <button class="play">
+          <img src="img/play-button.png" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <div id="trending">
+      <div id="collection">
+        <div class="trend">
+          <div class="newTrend">
+            <div class="gradient">
+              <img src="img/puma.png" alt="puma-trend" />
+            </div>
+            <div class="trendName">
+              <h2>Puma</h2>
+              <span>Mens running shoes</span>
+              <button>View Now</button>
+            </div>
+          </div>
+          <div class="newTrend">
+            <div class="gradient">
+              <img src="img/nike2.png" alt="nike-trend" />
+            </div>
+            <div class="trendName">
+              <h2>Nike</h2>
+              <span>Mens running shoes</span>
+              <button>View Now</button>
+            </div>
+          </div>
+          <div class="newTrend">
+            <div class="gradient">
+              <img src="img/adidas.png" alt="adidas-trend" />
+            </div>
+            <div class="trendName">
+              <h2>Adidas</h2>
+              <span>Mens running shoes</span>
+              <button>View Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="featured">
+      <div class="featuredProducts">
+        <h1>Featured Products</h1>
+      </div>
+      <div class="type">
+        <a href="#"> <span class="mensType active"> Mens </span></a>
+        <a href="#"> <span class="womanType"> Woman </span></a>
+      </div>
+      <div id="shortPageMan" class="animate__animated">
+        <div class="sneackersShort">
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/adidasShort.webp" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name">Adidas</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$50.99</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/pumaShort.png" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name">Puma</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$39.99</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/reebookShort.png" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name">Reebook</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$35</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/nikeShort.png" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name">Nike</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$69.50</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/lacosteShort.png" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name">Lacoste</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$45.99</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/vansShort.png" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name">Vans</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$30.99</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/balenciagaShort.png" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name">Balenciaga</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$99.99</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/newbalanceShort.png" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name" style="white-space: nowrap">New Balance</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$29.99</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="shortPageWoman" class="animate__animated">
+        <div class="sneackersShort">
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/adidasShortW.png" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name">Adidas</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$50.99</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/pumaShortW.png" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name">Puma</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$39.99</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/reebookShortW.png" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name">Reebook</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$35</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/nikeShortW.png" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name">Nike</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$69.50</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/lacosteShortW.png" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name">Lacoste</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$45.99</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/vansShortW.png" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name">Vans</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$30.99</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/balenciagaShortW.png" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name">Balenciaga</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$99.99</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+          <div class="sneacker">
+            <div class="sneackerShortImg">
+              <img src="img/newbalanceShortW.png" alt="" />
+            </div>
+            <div class="sneackersShortName">
+              <span class="name" style="white-space: nowrap">New Balance</span>
+              <span class="cat">Running shoes</span>
+              <span class="price">$29.99</span>
+            </div>
+
+            <div class="buy">
+              <img src="img/cart.png" alt="buy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="newArrivalsH1">New Arrivals</h1>
+
+    <div id="arrivals">
+      <div class="offer">
+        <div class="offerImg">
+          <img
+            src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/methode/2020/09/05/0151ef7e-edb5-11ea-8288-5c49f42eee5c_image_hires_193040.jpg?itok=ydapHfnB&v=1599344561"
+            alt=""
+          />
+        </div>
+        <div class="offerText">
+          <h1 class="hOne">Special Offer</h1>
+          <h2 class="hTwo"><span>5 Days</span> 2 Days left</h2>
+          <h3 class="hThree">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magni
+            accusamus impedit quos.
+          </h3>
+          <h4 class="hFour">Only for, <span>$50.99</span></h4>
+          <button class="buyNow">Buy Now</button>
+          <button class="addToBasket">Add to basket</button>
+        </div>
+      </div>
+
+      <div class="offer">
+        <div class="offerImg">
+          <img
+            src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/brand-landing-pages/adidas/2023/spring/deluxe_story2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="offerText">
+          <h1 class="hOne">Special Offer</h1>
+          <h2 class="hTwo"><span>5 Days</span> 3 Days left</h2>
+          <h3 class="hThree">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magni
+            accusamus impedit quos.
+          </h3>
+          <h4 class="hFour">Only for, <span>$39.99</span></h4>
+          <button class="buyNow">Buy Now</button>
+          <button class="addToBasket">Add to basket</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="comments">
+      <div class="whatPeopleSay">
+        <span>TESTIMONIALS</span>
+        <h1>What People Say <br />About Us.</h1>
+        <div class="dots">
+          <div class="circle active"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+      <div class="commentContainer">
+        <div class="imgAuthor"><!-- css image is here--></div>
+        <div class="comment" id="commentOne">
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            voluptatem at harum aut tenetur natus obcaecati! Ipsa officia vitae
+            consequuntur, blanditiis saepe a, ut distinctio laboriosam sunt aut
+            ullam. Odio.
+          </h3>
+          <h4>Dwayne Johnson</h4>
+          <h5>UI/UX Designer</h5>
+        </div>
+
+        <div class="comment" id="commentTwo">
+          <h3>
+            Apsum dolor sit amet consectetur adipisicing elit. Aperiam
+            voluptatem at harum aut tenetur natus obcaecati! Ipsa officia vitae
+            consequuntur ut distinctio laboriosam sunt aut
+            ullam. Odio.
+          </h3>
+          <h4>Alex Techer</h4>
+          <h5>Dropshipping</h5>
+        </div>
+
+        <div class="comment" id="commentThree">
+          <h3>
+            Ipsa officia vitae
+            consequuntur, blanditiis saepe a, ut distinctio laboriosam sunt aut
+            ullam. Odio.
+          </h3>
+          <h4>Antonion Margarita</h4>
+          <h5>Customer</h5>
+        </div>
+
+
+        <div class="commentsSlider">
+          <button class="slideLeft">
+            <img src="img/arrow.png" alt="slideLeft" />
+          </button>
+          <button class="slideRight">
+            <img src="img/arrow.png" alt="slideRight" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>© All rights reserved</footer>
+  </body>
+</html>

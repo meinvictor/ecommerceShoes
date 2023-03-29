@@ -1,0 +1,700 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+  height: fit-content;
+  user-select: none;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 200px;
+  margin-top: calc(50vh - 100px);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sidebar a li {
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  border: 2px solid rgba(15, 15, 15, 0.8);
+  margin-bottom: 20px;
+  list-style: none;
+  transition: 0.2s all ease;
+}
+#sidebar a li:hover {
+  transition: 0.2s all ease;
+  transform: scale(1.1);
+}
+
+.activeSide {
+  background: rgba(15, 15, 15, 0.8);
+}
+
+.backgroundRed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100%;
+  z-index: -1;
+  background: #41295a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2f0743,
+    #41295a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2f0743,
+    #41295a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 0 0 0 70%;
+}
+
+.sneackerImg {
+  position: absolute;
+  top: 100px;
+  left: -50px;
+  transform: rotate(-10deg);
+}
+
+nav {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Tilt Neon";
+}
+.active {
+  color: #8860c3;
+}
+
+nav .navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+nav .navigation li {
+  list-style: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+
+nav .navigation li:hover {
+  transition: 0.2s all ease;
+  opacity: 0.7;
+}
+
+nav .navigation .logo {
+  width: 50px;
+  height: 100%;
+}
+nav .navigation .logo img {
+  width: 100%;
+  transform: scale(-1, 1);
+}
+
+nav .auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+}
+
+nav .auth button {
+  background: none;
+  border: 0;
+  color: #fff;
+  font: 1.2em "Tilt Neon";
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+nav .auth button.login:hover {
+  opacity: 0.8;
+  transition: 0.2s all ease;
+}
+
+nav .auth button.signup {
+  border: 2px solid #fff;
+  padding: 6px 12px;
+  border-radius: 10px;
+  transition: 0.2s all ease;
+}
+
+nav .auth button.signup:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.2s all ease;
+}
+
+#headerContent {
+  width: 50vw;
+  height: calc(100vh - 50px);
+}
+
+#headerContent .h1 {
+  width: 70%;
+  height: 50%;
+  margin-left: 15%;
+  padding-top: 10%;
+}
+
+#headerContent .h1 h1 {
+  width: 100%;
+  height: 100%;
+  font-size: 5em;
+  font-family: "Roboto Slab";
+  color: #343434;
+}
+#headerContent .h1 h1 span {
+  color: #8860c3;
+}
+
+#headerContent .h2 {
+  width: 70%;
+  margin-left: 15%;
+  padding-top: 5%;
+}
+
+#headerContent .h2 h2 {
+  font-family: "Roboto Slab";
+  font-size: 1em;
+  font-weight: 500;
+  color: #343434;
+}
+
+#headerContent .findOutBtn {
+  width: 70%;
+  padding-top: 5%;
+  margin-left: 15%;
+}
+
+#headerContent .findOutBtn button {
+  padding: 20px 30px;
+  border: 0;
+  outline: none;
+  background: #41295a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #2f0743,
+    #41295a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #2f0743,
+    #41295a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 15px;
+  color: #fff;
+  font: 1em "Roboto Slab";
+  -webkit-box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  float: left;
+  transition: .2s all ease;
+}
+
+#headerContent .findOutBtn button:hover {
+  transform: scale(1.050);
+  transition: .2s all ease;
+}
+
+#headerContent .findOutBtn button.play {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin-left: 30px;
+  margin-top: px;
+  -webkit-box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.75);
+}
+
+#headerContent .findOutBtn button.play img {
+  width: 20px;
+}
+
+#trending {
+  width: 100vw;
+  height: fit-content;
+}
+
+#collection {
+  width: 100vw;
+  height: 40vh;
+}
+
+#collection .trend {
+  width: 100vw;
+  height: 30vh;
+  padding-top: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+}
+
+#collection .trend .newTrend {
+  width: 20vw;
+  height: 25vh;
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+}
+
+#collection .trend .newTrend .gradient {
+  width: 50%;
+  height: 100%;
+  border-radius: 15px;
+  background: #643d8d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #8747a7,
+    #643d8d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #8747a7,
+    #643d8d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#collection .trend .newTrend .gradient img {
+  position: relative;
+  width: 150%;
+  top: -30px;
+  left: -40px;
+  transform: rotate(-50deg);
+}
+
+#collection .trend .newTrend .trendName {
+  width: 40%;
+  height: 100%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Roboto Slab";
+}
+
+#collection .trend .newTrend .trendName h2 {
+  color: #303030;
+}
+
+#collection .trend .newTrend .trendName span {
+  color: #919191;
+  font-size: 0.9em;
+}
+
+#collection .trend .newTrend .trendName button {
+  background-color: #8860c3;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  padding: 5px 15px;
+  font-family: "Tilt Neon";
+  cursor: pointer;
+}
+
+#featured {
+  width: 100vw;
+  height: fit-content;
+  padding-top: 5vh;
+}
+
+#featured .featuredProducts {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#featured .featuredProducts h1 {
+  font: 2.2em "Roboto Slab";
+  font-weight: 700;
+  color: #343434;
+}
+
+#featured .type {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-left: 10vw;
+}
+
+#featured .type a {
+  font-family: "Tilt Neon";
+  font-size: 2em;
+  font-weight: 700;
+  color: #343434;
+  transition: 0.2s all ease;
+}
+
+#featured .type a:hover {
+  color: #8860c3;
+  transition: 0.2s all ease;
+}
+
+#featured .sneackersShort {
+  width: 100vw;
+  height: 100%;
+  padding-left: 10vw;
+  display: flex;
+  gap: 5vw;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#featured .sneackersShort .sneacker {
+  width: 17vw;
+  height: 45vh;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 4px 5px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 5px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 5px -3px rgba(0, 0, 0, 0.75);
+  display: none;
+}
+
+#featured .sneackersShort .sneacker .sneackerShortImg {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s all ease;
+}
+
+#featured .sneackersShort .sneacker .sneackerShortImg:hover {
+  transform: scale(1.1);
+  transition: 0.2s all ease;
+  cursor: pointer;
+}
+
+#featured .sneackersShort .sneacker .sneackerShortImg img {
+  width: 100%;
+  height: 65%;
+  object-fit: contain;
+}
+
+#featured .sneackersShort .sneacker .sneackersShortName {
+  width: 55%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vh;
+  float: left;
+  padding-left: 5%;
+}
+
+#featured .sneackersShort .sneacker .sneackersShortName .name {
+  color: #303030;
+  font: bold 1.5em "Roboto Slab";
+}
+
+#featured .sneackersShort .sneacker .sneackersShortName .cat {
+  color: #919191;
+  font: bold 1em "Roboto Slab";
+}
+
+#featured .sneackersShort .sneacker .sneackersShortName .price {
+  color: #303030;
+  font: bold 1em "Roboto Slab";
+}
+
+#featured .sneackersShort .sneacker .buy {
+  width: 40%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  transition: .2s all ease;
+}
+
+#featured .sneackersShort .sneacker .buy:hover {
+  opacity: .6;
+  transition: .2s all ease;
+}
+
+#featured .sneackersShort .sneacker .buy img {
+  width: 30px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+#shortPageMan {
+  display: block;
+}
+
+#shortPageWoman {
+  display: none;
+}
+
+
+#arrivals {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1.newArrivalsH1 {
+  margin-top: 10vh;
+  font: bold 3em "Roboto Slab";
+  color: #363636;
+  text-align: center;
+}
+
+#arrivals .offer {
+  width: 40vw;
+  height: 60vh;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  -webkit-box-shadow: 2px 4px 11px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 11px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 11px -5px rgba(0, 0, 0, 0.75);
+}
+
+#arrivals .offer .offerImg {
+  width: 50%;
+  height: 100%;
+}
+
+#arrivals .offer .offerImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#arrivals .offer .offerText {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Roboto Slab";
+  text-align: center;
+}
+
+.offerText .hOne {
+  color: #643d8d;
+}
+
+.offerText .hTwo {
+  font-size: 1em;
+}
+
+.offerText .hTwo span {
+  text-decoration: line-through;
+  color: #919191;
+  font-size: 1em;
+}
+
+.offerText .hThree {
+  font-size: 1em;
+  color: #5a5a5a;
+}
+
+.offerText .hFour {
+  font-size: 1.1em;
+  color: #0f0f0f;
+}
+.offerText .hFour span {
+  color: #643d8d;
+}
+
+.offerText button {
+  background: #643d8d;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 1em "Roboto Slab";
+  cursor: pointer;
+  width: 70%;
+  transition: .2s all ease;
+}
+
+.offerText .buyNow {
+  margin-top: 20px;
+  border: 3px solid #643d8d;
+}
+
+.offerText button:hover{ 
+  transform: scale(0.95);
+  transition: .2s all ease;
+}
+
+.offerText .addToBasket {
+  background: none;
+  border: 3px solid #643d8d;
+  color: #643d8d;
+}
+
+#comments {
+  width: 100vw;
+  height: fit-content;
+}
+
+#comments .whatPeopleSay {
+  width: 30vw;
+  height: fit-content;
+  padding: 10vw 20vh;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#comments span {
+  color: #8860c3;
+  font: bold 1em "Roboto Slab";
+}
+
+#comments h1 {
+  color: #303030;
+  font: bold 3em "Roboto Slab";
+}
+
+.dots {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.dots .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 20px;
+  border: 2px solid rgb(122, 76, 131);
+  cursor: pointer;
+}
+.dots .active {
+  background-color: rgb(122, 76, 131);
+}
+
+.commentContainer {
+  display: flex;
+  width: 45vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.commentContainer .imgAuthor {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  position: relative;
+  top: 35px;
+  left: -299px;
+  background-image: url("https://cdn.britannica.com/60/222660-050-064DBA89/Dwayne-Johnson-AKA-The-Rock-2019.jpg?w=400&h=300&c=crop");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.commentContainer .comment {
+  width: 40vw;
+  padding: 50px 40px;
+  -webkit-box-shadow: 5px 3px 5px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 3px 5px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 4px 7px 0px rgba(0, 0, 0, 0.55);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Roboto Slab";
+}
+
+#commentTwo {
+  display: none;
+}
+#commentThree {
+  display: none;
+}
+
+.commentContainer .comment h3 {
+  font-size: 1.1em;
+}
+
+.commentContainer .comment h4 {
+  margin: 15px 0 15px 0;
+  font-size: 1em;
+}
+
+.commentContainer .commentsSlider {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.commentContainer .commentsSlider button {
+  border: 0;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #41295a;
+  cursor: pointer;
+}
+
+.commentContainer .commentsSlider .slideLeft {
+  transform: rotate(180deg);
+}
+
+footer {
+  width: 100vw;
+  height: 100px;
+  font: bold 1em "Roboto Slab";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dedede;
+}

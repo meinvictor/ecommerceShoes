@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eef2f3,
+    #8e9eab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eef2f3,
+    #8e9eab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  overflow: hidden;
+}
+
+#registration {
+  width: 80vw;
+  height: 90vh;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 5vh 10vw;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
+}
+
+#registration .background {
+  position: absolute;
+  right: 0;
+  width: 30vw;
+  height: 100%;
+  display: block;
+  border-radius: 0 20px 20px 0;
+  background-color: #c4cbc3;
+}
+
+#registration .background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 20px 20px 0;
+}
+
+.signup {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signup h1 {
+  font: 2em "Roboto Slab";
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.signup input {
+  width: 20vw;
+  background: none;
+  border: 0;
+  outline: none;
+  border: 2px solid rgba(128, 128, 128, 0.2);
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.55);
+  padding: 15px;
+}
+
+.signup button {
+  width: 20vw;
+  background: #c4cbc3;
+  border: 0;
+  outline: none;
+  border-radius: 7px;
+  font: 1em "Roboto Slab";
+  color: #fff;
+  padding: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+.backHome {
+  position: absolute;
+  top:15px; 
+  left:15px;
+}
